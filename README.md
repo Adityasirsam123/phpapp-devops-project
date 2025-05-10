@@ -1,11 +1,6 @@
 # Todo-list-with-php
 A simple todo list with bootstrap and raw php
 
-provided, formatted properly for GitHub:
-
-markdown
-Copy
-Edit
 # ✅ Todo-list-with-php
 
 A simple todo list built using Bootstrap and raw PHP.
@@ -28,11 +23,9 @@ Use the following commands to install Apache, MySQL, PHP, and required modules:
 ```bash
 sudo apt update
 sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql unzip -y
+
 ✅ 2. Setup MySQL DB on db-server
 Step-by-step:
-bash
-Copy
-Edit
 # Update and install MySQL
 sudo apt update && sudo apt install mysql-server
 
@@ -44,25 +37,13 @@ sudo sed -i 's/bind-address.*/bind-address = 0.0.0.0/' /etc/mysql/mysql.conf.d/m
 
 # Restart MySQL to apply changes
 sudo systemctl restart mysql
+
 Check the Bind Address
 Open the MySQL config file:
-
-bash
-Copy
-Edit
 sudo nano /etc/mysql/my.cnf
 Or (based on your system):
-
-bash
-Copy
-Edit
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
-Look for this line:
 
-ini
-Copy
-Edit
-bind-address = 127.0.0.1
 Change it to one of the following depending on your needs:
 
 127.0.0.1 — only local connections allowed.
@@ -73,10 +54,6 @@ Change it to one of the following depending on your needs:
 
 ✅ 3. Install Docker & Docker Compose
 Install Docker and Docker Compose with the commands below:
-
-bash
-Copy
-Edit
 # Install Docker
 sudo apt-get install docker.io -y
 
