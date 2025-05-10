@@ -1,3 +1,4 @@
+#mysql on same server
 version: '3.8'
 
 services:
