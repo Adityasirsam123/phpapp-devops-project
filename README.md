@@ -15,7 +15,8 @@ To install Apache, MySQL, PHP, and required modules, run the following commands:
 ```bash
 sudo apt update
 sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql unzip -y
-✅ Phase 2: Setup MySQL DB on db-server
+
+## ✅  2. Setup MySQL DB on db-server
 bash
 Copy
 Edit
