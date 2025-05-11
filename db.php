@@ -8,4 +8,8 @@ $dbcon = new mysqli(HOST, USERNAME, PASSWORD, DBNAME);
 
 if ($dbcon->connect_error) {
     die("connect error: " . $dbcon->connect_error);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> eb154fd (added k8s manifest)

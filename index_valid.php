@@ -12,4 +12,8 @@ if (isset($_POST['addtask'])) {
     header('Location: index.php');
     exit; // Stop script execution here
 }
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> eb154fd (added k8s manifest)
