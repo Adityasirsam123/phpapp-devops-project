@@ -2,18 +2,18 @@
 require_once 'db.php';
 
 if (isset($_POST['addtask'])) {
-    $task_add = $_POST['textfield'];
+    $task_add = trim($_POST['textfield']);
+
     if (!empty($task_add)) {
-        $task_add_query = "INSERT INTO task_table (task_name) VALUES  ('$task_add')";
-        $add_query = $dbcon->query($task_add_query);
+        // Use prepared statements to prevent SQL injection
+        $stmt = $dbcon->prepare("INSERT INTO task_table (task_name) VALUES (?)");
+        $stmt->bind_param("s", $task_add);
+        $stmt->execute();
+        $stmt->close();
     }
 
-    // Make sure this is called before any output
+    // Redirect before any output
     header('Location: index.php');
-    exit; // Stop script execution here
+    exit;
 }
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> eb154fd (added k8s manifest)
